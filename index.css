@@ -1,0 +1,80 @@
+.wrapper{
+    display: flex;
+    width: 80%;
+    min-width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* border: 3px solid black; */
+}
+
+.img-wrap{
+    width: 10%;
+    height: 100%;
+    flex-grow: 1;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.6;
+    animation: img-restore 0.5s ease-out;
+    
+}
+.wrapper .img-wrap:nth-of-type(1){
+    background-image: url("./img/IMG_20171016_101137.jpg");
+}
+.wrapper .img-wrap:nth-of-type(2){
+    background-image: url("./img/mmexport1530705386925.jpg");
+}
+.wrapper .img-wrap:nth-of-type(3){
+    background-image: url("./img/psbe\ \(1\).jpg");
+}
+.wrapper .img-wrap:nth-of-type(4){
+    background-image: url("./img/psbe\ \(2\).jpg");
+}
+.wrapper .img-wrap:nth-of-type(5){
+    background-image: url("./img/女神1508475775618.jpeg");
+}
+.wrapper .img-wrap:nth-of-type(6){
+    background-image: url("./img/女神1508476063507.jpeg");
+}
+.wrapper .img-wrap:nth-of-type(7){
+    background-image: url("./img/女神1508476070982.jpeg");
+}
+.wrapper .img-wrap:nth-of-type(8){
+    background-image: url("./img/女神1508476074278.jpeg");
+}
+.wrapper .img-wrap:nth-of-type(9){
+    background-image: url("./img/女神1508476081038.jpeg");
+}
+.wrapper .img-wrap:nth-of-type(10){
+    background-image: url("./img/女神1508476084744.jpeg");
+}
+
+.active{
+    animation: img-move 300ms ease-out;  
+}
+.place{
+    width: 600px;
+    opacity: 1;
+}
+@keyframes img-move{
+    0%{
+        width: 10%;
+        opacity: 0.6;
+    }
+    100%{
+        width: 600px;
+        opacity: 1;
+    }
+}
+@keyframes img-restore{
+    0%{
+        width: 600px;
+        opacity: 1;
+    }
+    100%{
+        width: 10%;
+        opacity: 0.6;
+    }
+}
